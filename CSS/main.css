@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --p-size: 15px;
+}
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+body {
+    background-color: #d5e1ef;
+}
+.container {
+    margin-top: 100px;
+}
+.container .qrcode {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+}
+.container .qrcode img {
+    width: 100%;
+    border-radius: 12px;
+}
+.container .qrcode .content {
+    padding: 20px;
+}
+.container .qrcode .content h1 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+.container .qrcode .content p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+    color: var(--Grayish-blue);
+}
+@media (min-width: 511px) {
+    .container {
+        width: 495px;
+    }
+}
+
+/* Galaxy Fold media */
+@media (max-width: 413px) {
+    .container .qrcode .content h1 {
+        font-size: 1rem;
+    }
+    .container .qrcode .content p {
+        font-size: 12px;
+    }
+}
